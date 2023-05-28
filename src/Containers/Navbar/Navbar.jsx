@@ -12,7 +12,6 @@ import MenuItem from '@mui/material/MenuItem';
 
 import './Navbar.scss';
 
-const pages = ['Home', 'Pricings', 'Contact'];
 
 
 function Navbar() {
