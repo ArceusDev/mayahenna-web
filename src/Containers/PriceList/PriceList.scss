@@ -1,0 +1,80 @@
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300italic,400);
+
+h2{
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 40px;
+}
+
+.container {
+  background-image: linear-gradient(131.83deg, #e0d9d9 0%,     #e5cbc2 99.21%);
+  // background-image: linear-gradient(312.25deg, #FFC4BC 0%,     rgba(255, 255, 255, 0) 66.19%);  
+  width: 60%;
+  margin: 0 auto;
+  @media screen and (max-width: 1000px) {
+    width: 80%;
+  }
+
+  @media screen and (max-width: 500px) {
+    width: 95%;
+  }
+  
+  box-shadow: 0 20px 40px #b7372052;
+  border-radius: 16px;
+}
+
+.item-wrapper {
+
+  width: 90%;
+  margin: 0 auto;
+
+  .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+    .title {
+      font-family: 'Playfair Display', serif;
+      flex-grow: 1;
+      font-size: 18px;
+      // flex: 2;
+    }
+    .space {
+      flex-basis: 1;
+      overflow: hidden;
+      flex: 20;
+      flex-shrink: 4;
+      align-self: felx-end;
+      text-align: right;
+      margin-right: 10px;
+      margin-top: 16px;
+      border-bottom: 1px dotted black;
+      font-size: 0px;
+    }
+    .price {
+      font-size: 18px;
+      font-family: 'Playfair Display', serif;
+      min-width: 60px;
+      align-self: felx-end;
+    }
+  }
+  .description {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    width: 80%;
+  }
+}
+
+.head-text {
+  padding-top: 1rem;
+  font-family: 'Sacramento', cursive;
+  color: rgba($color: #ffffff, $alpha: 1.0);
+  font-weight:800;
+  font-size: 5rem;
+  text-shadow: 2px 2px rgba($color: #000000, $alpha: 0.4);
+}
