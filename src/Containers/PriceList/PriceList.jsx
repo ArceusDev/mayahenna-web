@@ -16,7 +16,7 @@ function PriceList() {
 
   return (
     <>
-    <h2 className='head-text'>Henna Price List</h2>
+    <h2  id='pricelist-id' className='head-text'>Henna Price List</h2>
       <div className='container'>
         {priceList.map( (pL, index ) => (
           <div key={index} className="item-wrapper">

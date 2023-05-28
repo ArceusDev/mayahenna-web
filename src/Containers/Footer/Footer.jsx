@@ -5,7 +5,7 @@ const Footer = () => {
 
   return (
     <>
-      <h2 className="head-text">Contact Us</h2>
+      <h2  id='footer-id' className="head-text">Contact Us</h2>
 
       <div className="app__footer-cards">
         <div className="app__footer-card ">

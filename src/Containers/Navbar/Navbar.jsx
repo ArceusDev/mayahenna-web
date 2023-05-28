@@ -28,7 +28,7 @@ function Navbar() {
 
 
   return (
-    <AppBar className='navbar' position="static">
+    <AppBar className='navbar' position="fixed">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography className='navbar__logo'
@@ -77,11 +77,16 @@ function Navbar() {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                <MenuItem href='#header-id' onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">Home</Typography>
                 </MenuItem>
-              ))}
+                <MenuItem href='#pricelist-id' onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">Price List</Typography>
+                </MenuItem>
+                <MenuItem href='#footer-id' onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">Contact</Typography>
+                </MenuItem>
+
             </Menu>
           </Box>
           <Typography className='navbar__logo'
@@ -102,16 +107,28 @@ function Navbar() {
           >
             MAYA HENNA
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>     
               <Button
-                key={page}
+                href='#header-id'
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-                {page}
+                <strong>Home</strong>
               </Button>
-            ))}
+              <Button
+                href='#pricelist-id'
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: 'white', display: 'block' }}
+              >
+                <strong>Price List</strong>
+              </Button>
+              <Button
+                href='#footer-id'
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: 'white', display: 'block' }}
+              >
+                <strong>Contact</strong>
+              </Button>
           </Box>
         </Toolbar>
       </Container>

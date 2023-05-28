@@ -5,7 +5,7 @@ import './Header.scss'
 
 function Header() {
   return (
-    <div className="header">
+    <div  id='header-id' className="header">
     <Typewriter
   
        onInit={(typewriter)=> {
